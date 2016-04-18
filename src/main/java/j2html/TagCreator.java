@@ -8,6 +8,8 @@ public class TagCreator {
     public static ContainerTag tag(String tagName)          { return new ContainerTag(tagName); }
     public static EmptyTag emptyTag(String tagName)         { return new EmptyTag(tagName); }
 
+    public static DomContentCollector domContentCollect()   { return new DomContentCollector(); }
+
     public static Text text(String text)                    { return new Text(text); }
     public static UnescapedText unsafeHtml(String html)     { return new UnescapedText(html); }
 
